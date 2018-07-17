@@ -1,7 +1,7 @@
 {
-  "name": "workspace",
+  "name": "ct5",
   "version": "1.0.0",
-  "description": "",
+  "description": "classwork five works",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,10 +11,18 @@
     "type": "git",
     "url": "git+https://github.com/ShahALiSE/ClassWokFive.git"
   },
-  "author": "",
+  "author": "\"\"",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ShahALiSE/ClassWokFive/issues"
   },
-  "homepage": "https://github.com/ShahALiSE/ClassWokFive#readme"
+  "homepage": "https://github.com/ShahALiSE/ClassWokFive#readme",
+  "keywords": [
+    "[]"
+  ],
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.2"
+  },
+  "devDependencies": {}
 }
