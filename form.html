@@ -1,23 +1,38 @@
-<!DOCTYPE html>
 <html>
+    <head>
+        <title>Form</title>
+    </head>
     <body>
-    <form action="/form" method="POST">
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="email" name="email"><br>
-    <input type="submit" value="Submit"/>
-</form>   
-
+        <form
+        <h1>Form Page</h1>
+            <p>User Name:</p>
+          	<input type="text" id="name"/><br/><br/>
+          	<p>Email:</p>
+          	<input type="text" id="email"/><br/><br/>
+          	<button id="submit">Submit</button>
+      </form>
     </body>
     
-    <scrip src="https://code.jquery.com/jquery-3.3.1..min.js"></script>
-    <script >
-        
-        var user = {name:"",email:""};
-	$('#submit').click(functin(){cv});
-	    
+    <script src="https://code.jquery.com/jquery-3.3.1.js">
     </script>
     
+    <script>
+        var user = {name:"",email:""};
+        $('#submit').click(function(){
+            
+            user.name=$("#name").val();
+            user.email=$("#email").val();
+            $.ajax({
+               method:"post",
+               url:"/submit_user",
+               data: user
+            }).done(function(response){
+                console.log(response);
+            }).fail(function(response){
+                console.log(response);
+            })
+        });
     
+    </script>
     
 </html>
-
